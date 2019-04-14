@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {Link} from "react-router-dom"
 
 import Registered_user from "../registered_user";
-import Alumni_recommendation from "../Alumni_recommendation";
+import Menu from "../menu/index";
 
 
 class App extends Component {
@@ -13,8 +13,8 @@ class App extends Component {
             <div>
                 <Router>
                     <Switch>
-                        <Route exact path='/' component={Registered_user}/>
-                        <Route path='/Alumni_recommendation' component={Alumni_recommendation}/>
+                        <Route exact path='/123' component={Registered_user}/>
+                        <Route exact path='/' component={Menu}/>
                     </Switch>
 
                 </Router>
